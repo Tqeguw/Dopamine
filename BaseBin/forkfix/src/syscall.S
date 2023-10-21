@@ -1,5 +1,3 @@
-
-
 .align 4
 
 .global _ffsys_fork
