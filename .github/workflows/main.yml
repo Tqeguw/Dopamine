@@ -39,7 +39,7 @@ jobs:
       - name: Install Procursus
         uses: w2599/procursus-action@main
         with:
-          packages: ldid trustcache make findutils coreutils xz-utils
+          packages: ldid trustcache make findutils coreutils xz-utils sed
           cache: true
           cache-path: ~/__cache
         env:
