@@ -221,7 +221,7 @@ int kreadbuf(uint64_t kaddr, void* output, size_t size)
 
 		int pr = physreadbuf(physPage + pageOffset, &data[size - sizeLeft], readSize);
 		if (pr != 0) {
-			JBLogError("[kreadbuf] Physical read at %llx failed: %d", physPage + pageOffset, pr);
+			JBLogError("[kreadbuf] Physical read at 0x%llx failed: %d", physPage + pageOffset, pr);
 			return pr;
 		}
 
