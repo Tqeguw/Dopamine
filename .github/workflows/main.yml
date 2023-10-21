@@ -30,6 +30,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Checkout tools repo
+        uses: actions/checkout@v4
+        with:
+          repository: opa334/kfd
+          path: Exploits/oobPCI/Sources/kfd
+
       - name: Install Procursus
         uses: dhinakg/procursus-action@main
         with:
